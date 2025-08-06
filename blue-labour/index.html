@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blue Labour</title>
+  <style>
+    /* Reset basic styles */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+    /* Navbar Style */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ffffff;
+        padding: 12px 24px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    .nav-left {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #222;
+    }
+
+    .nav-right a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: #444;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    .nav-right a:hover {
+        color: #007BFF;
+    }
+
+    /* Hero Section */
+    .hero {
+        text-align: center;
+        padding: 80px 20px 60px 20px;
+        background: linear-gradient(to right, #007BFF, #00bfff);
+        color: white;
+        border-radius: 0 0 30px 30px;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        opacity: 0.9;
+    }
+
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .hero-btn {
+        padding: 14px 28px;
+        font-size: 1rem;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        font-weight: 600;
+    }
+
+    .primary {
+        background-color: #ffffff;
+        color: #007BFF;
+        border: 2px solid white;
+    }
+
+    .primary:hover {
+        background-color: #e6f0ff;
+    }
+
+    .secondary {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+    }
+
+    .secondary:hover {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    /* Features Section */
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 50px 20px;
+        gap: 30px;
+        background-color: #f4f6f9;
+    }
+
+    .feature-box {
+        background-color: white;
+        padding: 25px;
+        border-radius: 10px;
+        max-width: 300px;
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .feature-box:hover {
+        transform: translateY(-5px);
+    }
+
+    .feature-box h3 {
+        margin-bottom: 10px;
+        color: #007BFF;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <nav>
+    <div class="nav-left">Blue Labour</div>
+    <div class="nav-right">
+      <a href="index.html">Home</a>
+      <a href="find-jobs.html">Find Job</a>
+      <a href="post_job.html">Post Job</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <h1>Welcome to Blue Labour</h1>
+    <p class="subtitle">Connecting blue-collar workers with real opportunities</p>
+    <div class="hero-buttons">
+      <a class="hero-btn primary" href="find-jobs.html">Find a Job</a>
+      <a class="hero-btn secondary" href="post_job.html">Post a Job</a>
+    </div>
+  </section>
+
+  <!-- ===== Features Section ===== -->
+  <section class="features">
+    <div class="feature-box">
+      <div>📦</div>
+      <h3>Easy Job Posting</h3>
+      <p>Post work with photo, contact and budget — all in 2 minutes.</p>
+    </div>
+    <div class="feature-box">
+      <div>🔍</div>
+      <h3>Fast Search</h3>
+      <p>See job cards instantly. No login needed to browse work.</p>
+    </div>
+    <div class="feature-box">
+      <div>📞</div>
+      <h3>Direct Contact</h3>
+      <p>Apply for a job with your name, photo, phone — simple and direct.</p>
+    </div>
+  </section>
+
+</body>
+</html>
