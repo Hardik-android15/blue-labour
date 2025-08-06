@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apply for Job - Blue Labour</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 30px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-left a {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .nav-right a {
+      margin-left: 20px;
+      font-size: 1rem;
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+    }
+
+    .nav-right a:hover {
+      color: #007bff;
+    }
+
+    .apply-container {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #007bff;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #444;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="file"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 12px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+      font-family: inherit;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background-color: #007bff;
+      color: white;
+      padding: 14px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .submit-btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <a href="index.html">Blue Labour</a>
+    </div>
+    <div class="nav-right">
+      <a href="find-jobs.html">Find Job</a>
+      <a href="post_job.html">Post Job</a>
+      <a href="login.html">Login</a>
+    </div>
+  </nav>
+
+  <!-- Apply Form -->
+  <div class="apply-container">
+    <h2>Apply for this Job</h2>
+
+    <form>
+      <div class="form-group">
+        <label for="name">Full Name *</label>
+        <input type="text" id="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label for="profession">Are you a Professional?</label>
+        <select id="profession">
+          <option value="">--Select--</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="experience">Work Experience (optional)</label>
+        <textarea id="experience" rows="4" placeholder="Tell us about your experience..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="expected-price">Expected Price (₹)</label>
+        <input type="number" id="expected-price">
+      </div>
+
+      <div class="form-group">
+        <label for="photo">Upload Your Photo</label>
+        <input type="file" id="photo" accept="image/*">
+      </div>
+
+      <button type="submit" class="submit-btn">Submit Application</button>
+    </form>
+  </div>
+
+</body>
+</html>
